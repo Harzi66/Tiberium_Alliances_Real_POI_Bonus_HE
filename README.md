@@ -1,85 +1,113 @@
 # Tiberium Alliances Real POI Bonus HE
 
-An extensively enhanced version of the original **Tiberium Alliances Real POI Bonus** userscript by **petui**, continued and expanded by **Harzi**.
+Eine umfangreich erweiterte Version des ursprünglichen Userscripts **Tiberium Alliances Real POI Bonus** von **petui**, weiterentwickelt und ergänzt durch **Harzi**.
 
-The script adds a local POI event archive, automatic background synchronization, rank forecasts, coordinate search and map navigation, configurable forecast levels, and a multilingual interface.
+Das Script erweitert die ursprüngliche POI-Bonus-Anzeige um ein lokales Ereignisarchiv, eine automatische Hintergrundsynchronisierung, Rangprognosen, eine Koordinatensuche mit Kartenavigation, konfigurierbare Prognosewerte und eine mehrsprachige Benutzeroberfläche.
 
-## Features
+## Funktionen
 
-### POI Bonus Overview
+### POI-Bonus-Übersicht
 
-- Displays information about the selected Point of Interest (POI).
-- Shows the alliance bonus and alliance rank information.
-- Estimates the POI points required for the next rank increase or decrease.
-- Provides both **realistic** and **optimistic** estimates for gains and losses.
-- Shows the POI level used for each estimate.
+- Zeigt Informationen zum aktuell ausgewählten Point of Interest (POI).
+- Zeigt den Allianzbonus und Informationen zum aktuellen Allianzr ang.
+- Berechnet die benötigten POI-Punkte für einen möglichen Rangaufstieg oder Rangabstieg.
+- Bietet sowohl **realistische** als auch **optimistische** Prognosen für Gewinne und Verluste.
+- Zeigt die jeweils zugrunde gelegte POI-Stufe für jede Prognose an.
+- Listet die eigenen POIs des jeweiligen Typs einschließlich Koordinaten und Stufen auf.
+- Ermöglicht das direkte Zentrieren der Weltkarte auf einen eigenen POI durch Anklicken seiner Koordinaten.
 
-### POI Archive
+### POI-Archiv
 
-- Stores POI gained/lost events locally.
-- Performs an initial historical backfill and then uses incremental synchronization on later game starts.
-- Continues collecting events in the background; opening the archive is not required for collection.
-- Keeps the archive separate from the game's notification list.
-- Offers separate tabs for all seven POI categories:
+- Speichert gewonnene und verlorene POI-Ereignisse lokal.
+- Führt beim ersten Start einen historischen Datenabgleich durch.
+- Verwendet bei späteren Spielstarts eine inkrementelle Synchronisierung, um neue Ereignisse zu erfassen.
+- Sammelt Ereignisse automatisch im Hintergrund. Das Öffnen des Archivs ist dafür nicht erforderlich.
+- Führt ein eigenes Archiv unabhängig von der Benachrichtigungsliste des Spiels.
+- Bietet separate Registerkarten für alle sieben POI-Kategorien:
+
   - Tiberium
-  - Crystal
-  - Energy
-  - Infantry
-  - Vehicles (Uranium)
-  - Air Force
-  - Resonance
+  - Kristall
+  - Energie
+  - Infanterie
+  - Fahrzeuge (Uran)
+  - Luftwaffe
+  - Resonanz
 
-### Search and Map Navigation
+### Suche und Kartenavigation
 
-- Search archived events by coordinates.
-- Click an archived event to close the archive and center the world map on the event's coordinates.
+- Durchsucht archivierte POI-Ereignisse anhand ihrer Koordinaten.
+- Ermöglicht die gezielte Suche nach bestimmten Kartenpositionen.
+- Ein Klick auf ein archiviertes Ereignis schließt das Archiv und zentriert die Weltkarte automatisch auf die entsprechenden Koordinaten.
 
-### Configuration
+### Einstellungen und Konfiguration
 
-- Choose the archive retention period: 3 months, 6 months, 1 year, 2 years, or unlimited.
-- Set the maximum POI level used for forecasts (default: **46**).
-- The optimistic forecast considers up to two POI levels above the selected POI's level, subject to the configured maximum.
-- Select the interface language: **German, English, French, or Spanish**.
-- Filter the archive to show gained events, lost events, or both.
+- Auswahl der Aufbewahrungsdauer für archivierte Ereignisse:
+  - 3 Monate
+  - 6 Monate
+  - 1 Jahr
+  - 2 Jahre
+  - Unbegrenzt
+- Individuelle Einstellung der maximalen POI-Stufe für Prognosen (Standard: **46**).
+- Die optimistische Prognose berücksichtigt bis zu zwei POI-Stufen oberhalb der tatsächlich ausgewählten POI-Stufe, begrenzt durch die konfigurierte Maximalstufe.
+- Auswahl der Benutzeroberflächensprache:
+  - Deutsch
+  - Englisch
+  - Französisch
+  - Spanisch
+- Filter für die Archivansicht:
+  - Gewonnene und verlorene POI
+  - Nur gewonnene POI
+  - Nur verlorene POI
+- Möglichkeit, das gesamte lokale POI-Archiv zu löschen.
 
 ## Screenshots
 
-The screenshots below are included in this repository.
+### 1. POI-Bonus-Übersicht
 
-### POI Bonus Overview
+![POI-Bonus-Übersicht](Screenshot_1.png)
 
-<!-- Insert screenshot of the POI bonus overview here -->
+### 2. POI-Ereignisarchiv
 
-### POI Archive
+![POI-Ereignisarchiv](Screenshot_2.png)
 
-<!-- Insert screenshot of the POI archive here -->
+### 3. Archivoptionen und Einstellungen
 
-### Archive Options and Settings
-
-<!-- Insert screenshot of the archive options and settings here -->
+![Archivoptionen und Einstellungen](Screenshot_3.png)
 
 ## Installation
 
-1. Install a userscript manager such as [Tampermonkey](https://www.tampermonkey.net/).
-2. Open the userscript file in this repository: [Tiberium_Alliances_Real_POI_Bonus_HE.user.js](Tiberium_Alliances_Real_POI_Bonus_HE.user.js).
-3. Click **Raw** on GitHub. Tampermonkey should offer to install the script.
-4. Confirm the installation.
+1. Installiere einen Userscript-Manager wie [Tampermonkey](https://www.tampermonkey.net/).
+2. Öffne die Scriptdatei in diesem Repository:
+
+   [Tiberium_Alliances_Real_POI_Bonus_HE.user.js](Tiberium_Alliances_Real_POI_Bonus_HE.user.js)
+
+3. Klicke auf **Raw**.
+4. Tampermonkey erkennt das Userscript und bietet die Installation an.
+5. Bestätige die Installation.
 
 ## Updates
 
-The script header contains the `@downloadURL` and `@updateURL` entries pointing to this repository's `main` branch. A userscript manager can use these URLs to check for updates.
+Das Script enthält die Einträge `@downloadURL` und `@updateURL` im Script-Header.
 
-## Compatibility
+Beide verweisen auf die aktuelle Version im `main`-Branch dieses GitHub-Repositories.
 
-Designed for the browser-based **Command & Conquer: Tiberium Alliances** game and userscript managers that support the script metadata used here.
+Dadurch kann der verwendete Userscript-Manager selbstständig nach verfügbaren Updates suchen und diese installieren.
 
-## Credits and License
+## Kompatibilität
 
-- **Original author:** petui – original script and foundation.
-- **Further development:** Harzi – extensive feature development and maintenance of the HE edition.
+Entwickelt für das browserbasierte Spiel **Command & Conquer: Tiberium Alliances**.
 
-This project is distributed under the **GNU General Public License v3.0 or later (GPL-3.0-or-later)**.
+Kompatibel mit Userscript-Managern, die die im Script verwendeten Metadaten unterstützen, beispielsweise Tampermonkey.
 
-See the [GNU GPL v3.0 license](https://www.gnu.org/licenses/gpl-3.0.html).
+## Credits und Lizenz
 
-The original author's contribution is acknowledged. The HE edition builds on that original work and adds substantial new functionality.
+- **Originalautor:** petui – ursprüngliches Script und technische Grundlage.
+- **Weiterentwicklung:** Harzi – umfangreiche Funktionserweiterungen, Anpassungen und laufende Pflege der HE-Version.
+
+Dieses Projekt wird unter der **GNU General Public License Version 3 oder höher (GPL-3.0-or-later)** veröffentlicht.
+
+Weitere Informationen zur Lizenz:
+
+[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
+
+Die Arbeit des ursprünglichen Autors petui wird ausdrücklich anerkannt. Die HE-Version baut auf diesem ursprünglichen Script auf und erweitert es um zahlreiche zusätzliche Funktionen.
