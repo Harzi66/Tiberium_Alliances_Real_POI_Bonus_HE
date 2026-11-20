@@ -6,6 +6,8 @@
 // @author         petui (Original) / Harzi (Weiterentwicklung)
 // @sandbox        raw
 // @grant          none
+// @downloadURL    https://raw.githubusercontent.com/Harzi66/Tiberium_Alliances_Real_POI_Bonus_HE/main/Tiberium_Alliances_Real_POI_Bonus_HE.user.js
+// @updateURL      https://raw.githubusercontent.com/Harzi66/Tiberium_Alliances_Real_POI_Bonus_HE/main/Tiberium_Alliances_Real_POI_Bonus_HE.user.js
 // @description    Umfangreiche HE-Weiterentwicklung des ursprünglichen POI-Bonus-Scripts mit POI-Archiv, Synchronisation, Rangprognosen, Koordinatensuche und Mehrsprachigkeit.
 // @include        https://*.alliances.commandandconquer.com/*/index.aspx*
 // ==/UserScript==
